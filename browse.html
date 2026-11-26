@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Proper rendering on all screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Startups - PitchConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="browse-page">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>PitchConnect</h1>
+      </div>
+      <div class="nav-buttons">
+        <a href="#" class="btn btn-text">Sign In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="browse-container">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="search-box">
+          <input type="text" placeholder="Search startups...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="filters">
+          <div class="filter-dropdown">
+            <button class="filter-btn">Industry <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Technology</a>
+              <a href="#">Healthcare</a>
+              <a href="#">Finance</a>
+              <a href="#">Education</a>
+              <a href="#">E-commerce</a>
+            </div>
+          </div>
+          <div class="filter-dropdown">
+            <button class="filter-btn">Funding <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Pre-seed</a>
+              <a href="#">Seed</a>
+              <a href="#">Series A</a>
+              <a href="#">Series B</a>
+              <a href="#">Series C+</a>
+            </div>
+          </div>
+          <div class="filter-dropdown">
+            <button class="filter-btn">Location <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">North America</a>
+              <a href="#">Europe</a>
+              <a href="#">Asia</a>
+              <a href="#">Africa</a>
+              <a href="#">Australia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="startup-section">
+        <div class="section-header">
+          <h2>Trending Pitches</h2>
+          <a href="#" class="view-all">View all</a>
+        </div>
+        <div class="startup-cards">
+          <div class="startup-card">
+            <div class="startup-icon">
+              <img src="images/NeuroSight.png" alt="NeuroSight"> 
+            </div>
+            <h3>NeuroSight</h3>
+            <p>AI-powered neural interface technology for medical applications</p>
+            <a href="#" class="btn btn-outline btn-small">Details</a>
+          </div>
+          <div class="startup-card">
+            <div class="startup-icon">
+              <img src="images/CloudHarbour.png" alt="CloudHarbour">
+            </div>
+            <h3>CloudHarbour</h3>
+            <p>Next-generation cloud security and compliance platform</p>
+            <a href="#" class="btn btn-outline btn-small">Details</a>
+          </div>
+          <div class="startup-card">
+            <div class="startup-icon">
+              <img src="images/MedNova.png" alt="MediNova">
+            </div>
+            <h3>MediNova</h3>
+            <p>Revolutionary telemedicine platform with AI diagnostics</p>
+            <a href="#" class="btn btn-outline btn-small">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

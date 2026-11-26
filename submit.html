@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Proper rendering on all screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Pitch - PitchConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="submit-page">
+  <div class="submit-container">
+    <div class="submit-sidebar">
+      <div class="logo">
+        <h1>PitchConnect</h1>
+      </div>
+    </div>
+    <div class="submit-content">
+      <a href="founder.html" class="close-btn" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </a>
+      <h2>Submit Your Pitch</h2>
+      <form id="pitch-form">
+        <div class="form-group">
+          <label for="pitch-file">Upload Pitch*</label>
+          <div class="file-upload">
+            <button type="button" class="file-select-btn">Choose File</button>
+            <span class="file-name">No file chosen (PDF only)</span>
+            <input type="file" id="pitch-file" accept=".pdf" required hidden>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="startup-name">Startup Name*</label>
+          <input type="text" id="startup-name" placeholder="Enter your startup name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="industry">Industry*</label>
+          <div class="select-wrapper">
+            <select id="industry" required>
+              <option value="" disabled selected>Select industry</option>
+              <option value="tech">Technology</option>
+              <option value="health">Healthcare</option>
+              <option value="finance">Finance</option>
+              <option value="edu">Education</option>
+              <option value="ecommerce">E-commerce</option>
+            </select>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Location*</label>
+          <input type="text" id="location" placeholder="City, Country" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="funding-stage">Funding Stage*</label>
+          <div class="select-wrapper">
+            <select id="funding-stage" required>
+              <option value="" disabled selected>Select funding stage</option>
+              <option value="pre-seed">Pre-seed</option>
+              <option value="seed">Seed</option>
+              <option value="series-a">Series A</option>
+              <option value="series-b">Series B</option>
+              <option value="series-c">Series C+</option>
+            </select>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Description(max 250 characters)*</label>
+          <textarea id="description" placeholder="Briefly describe your startup and it's value proposition" maxlength="250" required></textarea>
+          <div class="char-count"><span id="char-count">0</span>/250</div>
+        </div>
+        
+        <p class="required-fields">*Required fields</p>
+        
+        <button type="submit" class="btn btn-primary btn-block">Submit Pitch</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

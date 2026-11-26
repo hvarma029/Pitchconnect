@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Proper rendering on all screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investor Dashboard - PitchConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <div class="container">
+      <div class="logo">
+        <h1>PitchConnect</h1>
+      </div>
+      <div class="user-controls">
+        <a href="#" class="notification-icon">
+          <i class="far fa-bell"></i>
+        </a>
+        <a href="#" class="user-avatar">
+          <i class=""></i>  
+          <!-- <img src="images/" alt="User Avatar"> -->
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="user-profile">
+        <div class="user-avatar">
+          <!-- <img src= "images/" alt="User Avatar"> -->
+        </div>
+        <div class="user-info">
+          <h3>Abc Jones</h3>
+          <p>Angel Investor</p>
+        </div>
+        <div class="investor-details">
+          <p>Chairman, TechFarm</p>
+          <p>Location: California</p>
+          <p>Startups funded through platform: 3</p>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="browse.html"><i class="fas fa-compass"></i> Discover</a></li>
+          <li><a href="#"><i class="fas fa-bookmark"></i> Saved</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dashboard-content">
+      <div class="welcome-card">
+        <h2>Welcome Back, abc!</h2>
+        <div class="stats-container">
+          <div class="stat-card pitches-viewed">
+            <h3>Pitches Viewed</h3>
+            <p class="stat-number">12</p>
+          </div>
+          <div class="stat-card saved-pitches">
+            <h3>Saved Pitches</h3>
+            <p class="stat-number">5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="preferences-section">
+        <div class="section-header">
+          <h2>Your Industry Preferences</h2>
+        </div>
+        <div class="industry-tags">
+          <span class="industry-tag">Tech</span>
+          <span class="industry-tag">SaaS</span>
+          <span class="industry-tag">Health</span>
+          <span class="industry-tag">FinTech</span>
+          <span class="industry-tag">AI</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

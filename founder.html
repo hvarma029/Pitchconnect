@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Proper rendering on all screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder Dashboard - PitchConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <div class="container">
+      <div class="logo">
+        <h1>PitchConnect</h1>
+      </div>
+      <div class="user-controls">
+        <a href="#" class="notification-icon">
+          <i class="far fa-bell"></i>
+        </a>
+        <a href="#" class="user-avatar">
+          <!-- <img src="images/" alt="User Avatar"> -->
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="user-profile">
+        <div class="user-avatar">
+          <!-- <img src="images/" alt="User Avatar"> -->
+        </div>
+        <div class="user-info">
+          <h3>Xyz Jones</h3>
+          <p>CEO, TechFusion</p>
+        </div>
+        <div class="profile-completion">
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+          <p>Profile completion 75%</p>
+          <a href="#" class="profile-link">Complete your profile to improve investor matching</a>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="browse.html"><i class="fas fa-compass"></i> Discover</a></li>
+          <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dashboard-content">
+      <div class="welcome-card">
+        <h2>Welcome Back, xyz!</h2>
+        <div class="stats-container">
+          <div class="stat-card active-pitches">
+            <h3>Active pitches</h3>
+            <p class="stat-number">2</p>
+          </div>
+          <div class="stat-card total-views">
+            <h3>Total views</h3>
+            <p class="stat-number">43</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pitches-section">
+        <div class="section-header">
+          <h2>Your Active Pitches</h2>
+          <a href="submit.html" class="btn btn-small btn-primary"><i class="fas fa-plus"></i> New Pitch</a>
+        </div>
+        <div class="pitch-cards">
+          <div class="pitch-card">
+            <h3>TechFusion -AI-Powered Data Analytics</h3>
+            <p class="pitch-date">Created on April 5, 2025</p>
+            <span class="status-badge active">Active</span>
+          </div>
+          <!-- More pitch cards would be listed here -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
